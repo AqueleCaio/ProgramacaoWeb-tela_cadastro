@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de cadastro</title>
+    <link rel="stylesheet" href="estilos/media-query-cadastro01.css" media="screen and (min-width: 290px) and  (max-width: 700px)">
+    <link rel="stylesheet" href="estilos/media-query-cadastro02.css" media="screen and (min-width: 700px) and  (max-width: 1100px)">
+    <link rel="stylesheet" href="estilos/media-query-cadastro03.css" media="screen and (min-width: 1100px) and (max-width: 2700px)">
+</head>
+<body>  
+    <picture id="conversa01">
+        <img src="imagens/men-talking-animate.svg" alt="Imagem ao lado do fomulário">
+    </picture>
+
+    <picture id="conversa02">
+        <img src="imagens/discussion-animate.svg" alt="Imagem ao lado do fomulário">
+    </picture>
+    <main>
+        <section class="content">
+
+            <header>
+                <h1>Seja Bem Vindo ao [NOME]</h1>
+                <h2>Faça seu cadastro para continuar</h2>
+            </header>
+
+            <form action="#" method="post" autocomplete="off">
+                <label for="iemail"><img src="imagens/icons8-mensagem-24.png" alt="icone de envelope"></label>
+                <input type="email" name="email" id="iemail" required maxlength="35" placeholder=" Email"> <br>
+                <hr id="linha01">
+
+                <label for="inome"><img src="imagens/icons8-usuário-de-gênero-neutro-24.png" alt="icone do perfil"></label>
+                <input type="text" name="nome" id="inome" required placeholder="Nome Completo"><br>
+                <hr id="linha02">
+
+                <label for="iusername"><img src="imagens/icons8-male-thinking-24.png" alt="icone de pessoa falando"></label>
+                <input type="text" name="username" id="iusername" required placeholder="Nickname"><br>
+                <hr id="linha03">
+
+                <label for="isenha"><img src="imagens/icons8-trancar-24.png" alt="icone de senha"></label>
+                <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder=" Senha (8-20)"> <br>
+                <hr id="linha04">
+
+                <button id="cadastrar" type="submit">Finalizar Cadastro</button>
+            </form>    
+
+            <button id="voltar">Login</button>
+
+        </section>
+    </main>
+    <script src="script_cadastro.js"></script>
+</body>
+</html>
