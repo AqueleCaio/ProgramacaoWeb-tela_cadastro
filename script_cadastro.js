@@ -66,13 +66,3 @@ input_senha.addEventListener('blur', (e) =>{
     linha4.classList.remove('linha_destaque')
     
 })
-
-/* ******************************************************* */
-
-
-/*
-botao_cadastrar.addEventListener('click', (e) =>{
-    e.preventDefault()
-    window.location.href = "#"; //link para página principal.
-});
-*/
