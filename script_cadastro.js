@@ -1,68 +1,45 @@
-const botao_cadastrar = document.getElementById('cadastrar')
-
-const input_email = document.getElementById('iemail')
-const input_nome = document.getElementById('inome')
-const input_username = document.getElementById('iusername')
-const input_senha = document.getElementById('isenha')
-
-const linha1 = document.getElementById('linha01')
-const linha2 = document.getElementById('linha02')
-const linha3 = document.getElementById('linha03')
-const linha4 = document.getElementById('linha04')
-
-/* ******************************************************* */
-
-input_email.addEventListener('click', (e) =>{
+$('#iemail').click((e) =>{   
     e.preventDefault()
-    linha1.classList.add('linha_destaque')
-    
+    $('#linha01').addClass('linha_destaque')
 })
 
-input_email.addEventListener('blur', (e) =>{
+$('#iemail').blur((e) =>{
     e.preventDefault()
-    linha1.classList.remove('linha_destaque')
-    
+    $('#linha01').removeClass('linha_destaque')
 })
 
 /* ******************************************************* */
 
-input_nome.addEventListener('click', (e) =>{
+$('#inome').click((e) =>{
     e.preventDefault()
-    linha2.classList.add('linha_destaque')
-    
+    $('#linha02').addClass('linha_destaque')
 })
 
-input_nome.addEventListener('blur', (e) =>{
+$('#inome').blur((e) =>{
     e.preventDefault()
-    linha2.classList.remove('linha_destaque')
-    
-})
-
-/* ******************************************************* */
-
-input_username.addEventListener('click', (e) =>{
-    e.preventDefault()
-    linha3.classList.add('linha_destaque')
-    
-})
-
-input_username.addEventListener('blur', (e) =>{
-    e.preventDefault()
-    linha3.classList.remove('linha_destaque')
-    
+    $('#linha02').removeClass('linha_destaque')
 })
 
 /* ******************************************************* */
 
-
-input_senha.addEventListener('click', (e) =>{
+$('#iusername').click((e) =>{
     e.preventDefault()
-    linha4.classList.add('linha_destaque')
-    
+    $('#linha03').addClass('linha_destaque')
 })
 
-input_senha.addEventListener('blur', (e) =>{
+$('#iusername').blur((e) =>{
     e.preventDefault()
-    linha4.classList.remove('linha_destaque')
-    
+    $('#linha03').removeClass('linha_destaque')
+})
+
+/* ******************************************************* */
+
+$('#isenha').click((e) => {
+    e.preventDefault()
+    $('#linha04').addClass('linha_destaque')
+})
+
+$('#isenha').blur((e) => {
+    e.preventDefault()
+    $('#linha04').removeClass('linha_destaque')
 })
