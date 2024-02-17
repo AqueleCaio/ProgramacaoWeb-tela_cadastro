@@ -9,9 +9,9 @@ A página é responsiva, o que significa que ela se adapta ao tamanho da tela do
 As imagens animadas adicionam um toque visual agradável e ajudam a tornar a página mais envolvente.
 
 # Funcionalidades :gear:
-Login: Os usuários podem inserir suas credenciais para acessar o sistema.
-Responsividade: A página se adapta a diferentes tamanhos de tela.
-Imagens Animadas: A página inclui imagens animadas para melhorar a experiência do usuário.
+Login: Os usuários podem inserir suas credenciais para acessar o sistema.  
+Responsividade: A página se adapta a diferentes tamanhos de tela.  
+Imagens Animadas: A página inclui imagens animadas para melhorar a experiência do usuário.  
 
 # Como Usar :question:
 Para usar esta página web, você precisa ter um navegador moderno que suporte jQuery. Você pode clonar este repositório e abrir o arquivo HTML principal no seu navegador.
