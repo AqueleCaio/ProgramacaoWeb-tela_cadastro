@@ -1,45 +1,13 @@
-$('#iemail').click((e) =>{   
-    e.preventDefault()
-    $('#linha01').addClass('linha_destaque')
-})
+$(document).ready(() => {
+    $('input').click((e) => {
+        e.preventDefault();
+        let dataLinha = $(e.target).data('linha'); // Pega o valor do respectivo data-linha
+        $('#' + dataLinha).addClass('linha_destaque'); // Transforma o valor do data-linha no id da tag <hr> e adiciona o estilo
+    });
 
-$('#iemail').blur((e) =>{
-    e.preventDefault()
-    $('#linha01').removeClass('linha_destaque')
-})
-
-/* ******************************************************* */
-
-$('#inome').click((e) =>{
-    e.preventDefault()
-    $('#linha02').addClass('linha_destaque')
-})
-
-$('#inome').blur((e) =>{
-    e.preventDefault()
-    $('#linha02').removeClass('linha_destaque')
-})
-
-/* ******************************************************* */
-
-$('#iusername').click((e) =>{
-    e.preventDefault()
-    $('#linha03').addClass('linha_destaque')
-})
-
-$('#iusername').blur((e) =>{
-    e.preventDefault()
-    $('#linha03').removeClass('linha_destaque')
-})
-
-/* ******************************************************* */
-
-$('#isenha').click((e) => {
-    e.preventDefault()
-    $('#linha04').addClass('linha_destaque')
-})
-
-$('#isenha').blur((e) => {
-    e.preventDefault()
-    $('#linha04').removeClass('linha_destaque')
-})
+    $('input').blur((e) => {
+        e.preventDefault();
+        let dataLinha = $(e.target).data('linha'); 
+        $('#' + dataLinha).removeClass('linha_destaque'); 
+    });
+});

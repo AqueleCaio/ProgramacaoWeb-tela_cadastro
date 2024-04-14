@@ -13,6 +13,7 @@
     </script>
 </head>
 <body>  
+
     <picture id="conversa01">
         <img src="imagens/men-talking-animate.svg" alt="Imagem ao lado do fomulário">
     </picture>
@@ -30,19 +31,19 @@
 
             <form action="#" method="post" autocomplete="off">
                 <label for="iemail"><img src="imagens/icons8-mensagem-24.png" alt="icone de envelope"></label>
-                <input type="email" name="email" id="iemail" required maxlength="35" placeholder=" Email"> <br>
+                <input type="email" name="email" id="iemail" maxlength="35" placeholder=" Email" data-linha="linha01"> <br>
                 <hr id="linha01">
 
                 <label for="inome"><img src="imagens/icons8-usuário-de-gênero-neutro-24.png" alt="icone do perfil"></label>
-                <input type="text" name="nome" id="inome" required placeholder="Nome Completo"><br>
+                <input type="text" id="inome" placeholder="Nome Completo" data-linha="linha02"><br>
                 <hr id="linha02">
 
                 <label for="iusername"><img src="imagens/icons8-male-thinking-24.png" alt="icone de pessoa falando"></label>
-                <input type="text" name="username" id="iusername" required placeholder="Nickname"><br>
+                <input type="text" id="iusername" placeholder="Nickname" data-linha="linha03"><br>
                 <hr id="linha03">
 
                 <label for="isenha"><img src="imagens/icons8-trancar-24.png" alt="icone de senha"></label>
-                <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder=" Senha (8-20)"> <br>
+                <input type="password" id="isenha" minlength="8" maxlength="20" placeholder=" Senha (8-20)" data-linha="linha04"> <br>
                 <hr id="linha04">
 
                 <button id="cadastrar" type="submit">Finalizar Cadastro</button>
